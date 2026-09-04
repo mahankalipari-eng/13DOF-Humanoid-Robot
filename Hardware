@@ -1,0 +1,30 @@
+## 🔌 ESP32 to PCA9685 Wiring
+
+The ESP32 communicates with the PCA9685 servo driver using the I2C protocol.
+
+| ESP32 Pin | PCA9685 Pin |
+| --------- | ----------- |
+| GPIO 21   | SDA         |
+| GPIO 22   | SCL         |
+| 3.3V      | VCC         |
+| GND       | GND         |
+
+The servo motors are connected to the PWM channels of the PCA9685 module.
+
+## 🔢 Servo Channel Mapping
+
+| Body Part      | PCA9685 Channel |
+| -------------- | --------------: |
+| Right Hip      |               0 |
+| Right Knee     |               1 |
+| Left Shoulder  |               2 |
+| Left Hip       |               3 |
+| Left Knee      |               4 |
+| Right Elbow    |               5 |
+| Right Shoulder |               6 |
+| Left Elbow     |               7 |
+| Left Ankle     |               8 |
+| Head Tilt      |               9 |
+| Head Pan       |              10 |
+| Right Ankle    |              11 |
+| Waist          |              12 |
